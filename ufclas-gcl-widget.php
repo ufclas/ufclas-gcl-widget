@@ -13,3 +13,27 @@
  * @package         UFCLAS_GCL_Widget
  */
 
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
+// Set path to current plugin folder, includes trailing slash
+define( 'UFCLAS_GCL_WIDGET_DIR', plugin_dir_path( __FILE__ ) );
+
+/**
+ * Include files
+ */
+require_once UFCLAS_GCL_WIDGET_DIR . 'inc/widgets.php';
+require_once UFCLAS_GCL_WIDGET_DIR . 'inc/shortcodes.php';
+
+
+/**
+ * Register Widgets
+ * 
+ * @since 0.1.0
+ */
+function ufclas_gcl_widget_init(){
+	register_widget( 'UFCLAS_GCL_Jobs_Widget' );
+}
+add_action( 'widgets_init', 'ufclas_gcl_widget_init' );
