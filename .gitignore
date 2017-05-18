@@ -4,3 +4,7 @@ wp-cli.local.yml
 node_modules/
 *.zip
 *.tar.gz
+_notes
+*.orig
+.sass-cache
+*.log*
