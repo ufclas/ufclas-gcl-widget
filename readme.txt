@@ -18,4 +18,9 @@ Widget and shortcode to use Gator CareerLink (Symplicity) Job Widget code in Wor
 == Changelog ==
 
 = 0.1 =
-* Adds widget and shortcode options.
+* Adds widget and shortcode for Gator CareerLink.
+
+== To-Do ==
+
+* Adds support for different csm sources in shortcode and widget
+* Adds support for all shortcode options in widget
